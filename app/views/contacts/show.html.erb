@@ -1,0 +1,73 @@
+<p id="notice"><%= notice %></p>
+
+<section class="fdb-block bg-light text-dark">
+  <div class="container py-5 my-5">
+    <div class="row">
+      <div class="col-12 col-md-8 col-lg-7 col-xl-5 text-left">
+        <div class="row">
+          <div class="col">
+            <h1>Your contact was added! </h1>
+            <h4 class="lead">Thank you!</h4>
+            <br>
+            <h4 class="lead">Feel free to change something if you change your mind or you can go to Homepage and see your contact there. </h4>
+          </div>
+        </div>
+        <div class="fdb-touch-show">  
+          <div class="row">
+            <div class="col mt-4">
+              <strong>Name: </strong>
+              <%= @contact.name %>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col mt-4">
+              <strong>Email: </strong>
+              <%= @contact.email %>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col mt-4">
+              <strong>Phone: </strong>
+              <%= @contact.phone %>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col mt-4">
+              <strong>Country: </strong>
+              <%= @contact.country %>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col mt-4">
+              <strong>City: </strong>
+              <%= @contact.city %>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col mt-4">
+              <strong>Gender: </strong>
+              <%= @contact.gender %>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col mt-4">
+              <strong>Age: </strong>
+              <%= @contact.age %>
+            </div>
+          </div>
+
+        </div>
+        <div class="row mt-4">
+          <%= link_to 'Edit', edit_contact_path(@contact), :class => 'btn btn-outline-dark mr-2' %>
+          <%= link_to 'Back', contacts_path, :class => 'btn btn-outline-dark' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
