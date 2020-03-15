@@ -26,5 +26,4 @@ ActiveRecord::Schema.define(version: 2020_03_15_161334) do
     t.text "gender"
     t.integer "age"
   end
-
 end
