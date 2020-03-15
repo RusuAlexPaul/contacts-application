@@ -47,8 +47,8 @@
             <div class="row mt-4 field">
               <div class= "col">
                 <div class="form-group">
-                  <label for="exampleFormControlSelect1">Country:</label>
-                  <%= form.country_select :country %>
+                  <label for="form">Country:</label>
+                    <%= form.country_select :country, :class => 'form-control bg-light text-dark' %>
                 </div>
               </div>
             </div>
@@ -56,8 +56,8 @@
             <div class="row mt-4 field">
               <div class= "col">
                 <div class="form-group">
-                  <label for="exampleFormControlInput1">City</label>
-                  <%= form.text_field :city, :class => "form-control bg-dark text-light", :type => "text", :placeholder => "City" %>
+                  <label for="form">City</label>
+                  <%= form.text_field :city, :class => 'form-control bg-light text-dark', :type => "text", :placeholder => "City" %>
                 </div>
               </div>
             </div>
@@ -65,8 +65,8 @@
             <div class="row mt-4 field">
               <div class= "col">
                 <div class="form-group">
-                  <label for="exampleFormControlInput1">Gender</label>
-                  <%= form.text_field :gender, :class => "form-control bg-dark text-light", :type => "text", :placeholder => "Gender" %>
+                  <label for="form">Gender</label>
+                  <%= form.text_field :gender, :class => 'form-control bg-light text-dark', :type => "text", :placeholder => "Gender" %>
                 </div>
               </div>
             </div> 
@@ -74,15 +74,15 @@
             <div class="row mt-4 field">
               <div class= "col">
                 <div class="form-group">
-                  <label for="exampleFormControlInput1">Age</label>
-                  <%= form.text_field :age, :class => "form-control bg-dark text-light", :type => "text", :placeholder => "Your Age" %>
+                  <label for="form">Age</label>
+                  <%= form.text_field :age, :class => 'form-control bg-light text-dark', :type => 'text', :placeholder => 'Your Age' %>
                 </div>
               </div>
             </div>
 
             <div class="row mt-4 actions">
               <div class= "col">
-                <%= form.submit :class => "btn btn-primary" %>
+                <%= form.submit :class => 'btn btn-primary' %>
               </div>
             </div>
 
