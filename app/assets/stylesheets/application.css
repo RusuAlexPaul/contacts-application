@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+table {
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+section {
+    background-color: #AED4E9 !important;
+}

@@ -11,12 +11,12 @@
     </div>
   <% end %>
 
-  <section class="fbd-block bg-light text-dark">
+  <section class="fbd-block text-dark">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-7 col-md-5 text-center">
           <div class="fdb-box fdb-touch">
-          
+            
             <div class="row mt-4 field">
               <div class= "col">
                 <div class="form-group">
@@ -30,7 +30,7 @@
               <div class= "col">
                 <div class="form-group">
                   <label for="form">Email: </label>
-                  <%= form.text_field :email, :class => "form-control bg-light text-light", :type => "text", :placeholder => "Your Email" %>
+                  <%= form.text_field :email, :class => "form-control bg-light text-dark", :type => "text", :placeholder => "Your Email" %>
                 </div>
               </div>
             </div>
@@ -39,7 +39,7 @@
               <div class= "col">
                 <div class="form-group">
                   <label for="form">Phone: </label>
-                  <%= form.text_field :phone, :class => "form-control bg-light text-light", :type => "text", :placeholder => "Phone Number" %>
+                  <%= form.text_field :phone, :class => "form-control bg-light text-dark", :type => "text", :placeholder => "Phone Number" %>
                 </div>
               </div>
             </div>
@@ -71,22 +71,21 @@
               </div>
             </div> 
 
-            <div class="row mt-4 field">
-              <div class= "col">
-                <div class="form-group">
-                  <label for="form">Age</label>
-                  <%= form.text_field :age, :class => 'form-control bg-light text-dark', :type => 'text', :placeholder => 'Your Age' %>
+              <div class="row mt-4 field">
+                <div class= "col">
+                  <div class="form-group">
+                    <label for="form">Age</label>
+                    <%= form.text_field :age, :class => 'form-control bg-light text-dark', :type => 'text', :placeholder => 'Your Age' %>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="row mt-4 actions">
-              <div class= "col">
-                <%= form.submit :class => 'btn btn-primary' %>
-              </div>
-            </div>
-
-          </div>
+            
+              <div class="row mt-4 actions">
+                <div class= "col">
+                  <%= form.submit :class => 'btn btn-primary' %>
+                </div>
+              </div>  
+          </div>      
         </div>      
       </div>
     </div>
