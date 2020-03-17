@@ -5,12 +5,12 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-12 col-md-12 col-lg-6 col-xl-5">
-        <h1>Business Contacts</h1>
-        <p class="lead mb-5 text-dark">Please check out my friends/business contacts! Feel free to add yourself on that list!</p>
-        <%= link_to 'Add Yourself', new_contact_path, :class => 'btn btn-primary text-light', :type => 'button' %>
+        <h1 class="font-weight-lighter">Business Contacts</h1>
+        <p class="mb-5 text-dark font-weight-light">Please check out my friends/business contacts! Feel free to add yourself on that list!</p>
+        <%= link_to 'Add Yourself', new_contact_path, :class => 'btn btn-primary text-dark', :type => 'button' %>
 
       </div>
-      <div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-5 pt-lg-0">
+      <div class="col-sm rounded float-right">
        <%= image_tag("online-contacts.svg", :alt => "rss feed") %>
       </div>
     </div>
@@ -19,8 +19,8 @@
 
 <section class="fdb-block p-5">
   <div class="container">
-    <table class="table">
-      <thead class="thead-light">
+    <table class="table shadow table-borderless table-hover">
+      <thead class="thead">
         <tr>
           <th scope="col">Name</th>
           <th scope="col">Email</th>
@@ -45,9 +45,9 @@
             <td><%= contact.city %></td>
             <td><%= contact.gender %></td>
             <td><%= contact.age %></td>
-            <td><%= link_to 'Show', contact, :class => 'btn-link text-decoration-none' %></td>
-            <td><%= link_to 'Edit', edit_contact_path(contact), :class => 'btn-link text-decoration-none' %></td>
-            <td><%= link_to 'Destroy', contact, :class => 'btn-link text-decoration-none text-danger', method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Show', contact, :class => 'btn-link text-decoration-none font-weight-bold' %></td>
+            <td><%= link_to 'Edit', edit_contact_path(contact), :class => 'btn-link text-decoration-none font-weight-bold' %></td>
+            <td><%= link_to 'Destroy', contact, :class => 'btn-link text-decoration-none text-danger font-weight-bold', method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>
       </tbody>
@@ -55,17 +55,17 @@
   </div>
 </section>
 
-<section class="fdb-block p-2">
+<section class="fdb-block p-5">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col col-md-8 text-center">
-        <p>Follow us on</p>
-        <p>
-          <a href="https://www.froala.com" class="mx-2 text-secondary text-decoration-none"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-          <a href="https://www.froala.com" class="mx-2 text-secondary"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-          <a href="https://www.froala.com" class="mx-2 text-secondary"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-          <a href="https://www.froala.com" class="mx-2 text-secondary"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
-          <a href="https://www.froala.com" class="mx-2 text-secondary"><i class="fab fa-google" aria-hidden="true"></i></a>
+        <p class="font-weight-bolder">Follow us on</p>
+        <p class="pt-3 pb-3">
+          <a href="#" class="mx-2"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          <a href="#" class="mx-2"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          <a href="#" class="mx-2"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" class="mx-2"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+          <a href="#" class="mx-2"><i class="fab fa-google" aria-hidden="true"></i></a>
         </p>
       </div>
     </div>

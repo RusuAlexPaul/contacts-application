@@ -1,15 +1,18 @@
 <p id="notice"><%= notice %></p>
 
-<section class="fdb-block bg-light text-dark">
-  <div class="container py-5 my-5">
+<section class="fdb-block text-dark">
+  <div class="container py-3 my-3">
     <div class="row">
-      <div class="col-12 col-md-8 col-lg-7 col-xl-5 text-left">
-        <div class="row">
-          <div class="col">
+      <div class="col-12 text-left">
+        <div class="row-sm">
+          <div class="col-sm col-lg-6">
             <h1>Your contact was added! </h1>
             <h4 class="lead">Thank you!</h4>
             <br>
             <h4 class="lead">Feel free to change something if you change your mind or you can go to Homepage and see your contact there. </h4>
+          </div>
+          <div class="col-sm-6 rounded float-right">
+            <%= image_tag("undraw_done.svg", :alt => "rss feed") %>
           </div>
         </div>
         <div class="fdb-touch-show">  
@@ -64,8 +67,8 @@
 
         </div>
         <div class="row mt-4">
-          <%= link_to 'Edit', edit_contact_path(@contact), :class => 'btn btn-outline-dark mr-2' %>
-          <%= link_to 'Back', contacts_path, :class => 'btn btn-outline-dark' %>
+          <%= link_to 'Edit', edit_contact_path(@contact), :class => 'btn btn-primary mr-2' %>
+          <%= link_to 'Back', contacts_path, :class => 'btn btn-primary' %>
         </div>
       </div>
     </div>

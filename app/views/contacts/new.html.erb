@@ -2,7 +2,11 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col col-md-8 text-center">
-        <h1>New Contact</h1>
+        <h1 class="font-weight-lighter pb-5">New Contact</h1>
+        <p class="lead mb-5 text-dark font-weight-light">Please fill the fields with your information!</p>
+      </div>
+      <div class="row">
+        <%= image_tag("undraw_personal_info.svg", :alt => "rss feed") %>
       </div>
     </div>
   </div>
@@ -10,4 +14,4 @@
 
 <%= render 'form', contact: @contact %>
 
-<%= link_to 'Back', contacts_path %>
+

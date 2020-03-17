@@ -21,7 +21,7 @@
               <div class= "col">
                 <div class="form-group">
                   <label for="form">Name: </label>
-                  <%= form.text_field :name, :class => "form-control bg-light text-dark", :type => "text", :placeholder => "Your Name" %>
+                  <%= form.text_field :name, :class => "form-control bg-light text-dark border border-dark", :type => "text", :placeholder => "Your Name" %>
                 </div>
               </div>
             </div>
@@ -30,7 +30,7 @@
               <div class= "col">
                 <div class="form-group">
                   <label for="form">Email: </label>
-                  <%= form.text_field :email, :class => "form-control bg-light text-dark", :type => "text", :placeholder => "Your Email" %>
+                  <%= form.text_field :email, :class => "form-control bg-light text-dark border border-dark", :type => "text", :placeholder => "Your Email" %>
                 </div>
               </div>
             </div>
@@ -39,7 +39,7 @@
               <div class= "col">
                 <div class="form-group">
                   <label for="form">Phone: </label>
-                  <%= form.text_field :phone, :class => "form-control bg-light text-dark", :type => "text", :placeholder => "Phone Number" %>
+                  <%= form.text_field :phone, :class => "form-control bg-light text-dark border border-dark", :type => "text", :placeholder => "Phone Number" %>
                 </div>
               </div>
             </div>
@@ -48,7 +48,7 @@
               <div class= "col">
                 <div class="form-group">
                   <label for="form">Country:</label>
-                    <%= form.country_select :country, :class => 'form-control bg-light text-dark' %>
+                    <%= form.country_select :country, :class => 'form-control bg-light text-dark border border-dark' %>
                 </div>
               </div>
             </div>
@@ -57,7 +57,7 @@
               <div class= "col">
                 <div class="form-group">
                   <label for="form">City</label>
-                  <%= form.text_field :city, :class => 'form-control bg-light text-dark', :type => "text", :placeholder => "City" %>
+                  <%= form.text_field :city, :class => 'form-control bg-light text-dark border border-dark', :type => "text", :placeholder => "City" %>
                 </div>
               </div>
             </div>
@@ -66,7 +66,7 @@
               <div class= "col">
                 <div class="form-group">
                   <label for="form">Gender</label>
-                  <%= form.text_field :gender, :class => 'form-control bg-light text-dark', :type => "text", :placeholder => "Gender" %>
+                  <%= form.text_field :gender, :class => 'form-control bg-light text-dark border border-dark', :type => "text", :placeholder => "Gender" %>
                 </div>
               </div>
             </div> 
@@ -75,7 +75,7 @@
                 <div class= "col">
                   <div class="form-group">
                     <label for="form">Age</label>
-                    <%= form.text_field :age, :class => 'form-control bg-light text-dark', :type => 'text', :placeholder => 'Your Age' %>
+                    <%= form.text_field :age, :class => 'form-control bg-light text-dark border border-dark', :type => 'text', :placeholder => 'Your Age' %>
                   </div>
                 </div>
               </div>
@@ -83,6 +83,11 @@
               <div class="row mt-4 actions">
                 <div class= "col">
                   <%= form.submit :class => 'btn btn-primary' %>
+                </div>
+              </div>  
+              <div class="row mt-4 pb-4 actions">
+                <div class= "col">
+                  <%= link_to 'Back', contacts_path, :class => 'btn btn-primary' %>
                 </div>
               </div>  
           </div>      
