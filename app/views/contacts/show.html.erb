@@ -1,74 +1,74 @@
 <p id="notice"><%= notice %></p>
 
 <section class="fdb-block text-dark">
-  <div class="container py-3 my-3">
+  <div class="container pl-0 pr-0 py-3 my-3">
     <div class="row">
       <div class="col-12 text-left">
         <div class="row-sm">
           <div class="col-sm col-lg-6">
-            <h1>Your contact was added! </h1>
+            <h1 class="font-weight-lighter">Your contact was added! </h1>
             <h4 class="lead">Thank you!</h4>
             <br>
             <h4 class="lead">Feel free to change something if you change your mind or you can go to Homepage and see your contact there. </h4>
           </div>
-          <div class="col-sm-6 rounded float-right">
-            <%= image_tag("undraw_done.svg", :alt => "rss feed") %>
-          </div>
+        <div class="col-sm-6 rounded float-right">
+          <%= image_tag("undraw_done.svg", :alt => "rss feed") %>
         </div>
-        <div class="fdb-touch-show">  
-          <div class="row">
+        </div>
+        <div class="fdb-touch-show col-sm">  
+          <div class="row border border-dark bg-light border-bottom-0 rounded-top">
             <div class="col mt-4">
               <strong>Name: </strong>
               <%= @contact.name %>
             </div>
           </div>
 
-          <div class="row">
+          <div class="row border border-dark bg-light border-top-0 border-bottom-0">
             <div class="col mt-4">
               <strong>Email: </strong>
               <%= @contact.email %>
             </div>
           </div>
 
-          <div class="row">
+          <div class="row border border-dark bg-light border-top-0 border-bottom-0">
             <div class="col mt-4">
               <strong>Phone: </strong>
               <%= @contact.phone %>
             </div>
           </div>
 
-          <div class="row">
+          <div class="row border border-dark bg-light border-top-0 border-bottom-0">
             <div class="col mt-4">
               <strong>Country: </strong>
               <%= @contact.country %>
             </div>
           </div>
           
-          <div class="row">
+          <div class="row border border-dark bg-light border-top-0 border-bottom-0">
             <div class="col mt-4">
               <strong>City: </strong>
               <%= @contact.city %>
             </div>
           </div>
 
-          <div class="row">
+          <div class="row border border-dark bg-light border-top-0 border-bottom-0">
             <div class="col mt-4">
               <strong>Gender: </strong>
               <%= @contact.gender %>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col mt-4">
+          <div class="row border border-dark bg-light border-top-0 rounded-bottom">
+            <div class="col pb-4 mt-4">
               <strong>Age: </strong>
               <%= @contact.age %>
             </div>
           </div>
 
         </div>
-        <div class="row mt-4">
-          <%= link_to 'Edit', edit_contact_path(@contact), :class => 'btn btn-primary mr-2' %>
-          <%= link_to 'Back', contacts_path, :class => 'btn btn-primary' %>
+        <div class="row justify-content-center mt-4">
+          <%= link_to 'Edit', edit_contact_path(@contact), :class => 'btn shadow btn-primary mr-2' %>
+          <%= link_to 'Back', contacts_path, :class => 'btn shadow btn-primary' %>
         </div>
       </div>
     </div>

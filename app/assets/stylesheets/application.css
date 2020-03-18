@@ -13,9 +13,11 @@
  *= require_tree .
  *= require_self
  */
-p{
+
+p {
     margin-bottom: 0rem !important;
 }
+
 table {
     border-collapse: collapse;
     border-radius: 1em;
@@ -25,33 +27,41 @@ table {
 section {
     background-color: #AED4E9 !important;
 }
+
 img {
     border-style: none;
-    height: 280px;
+    height: 320px;
     width: auto;
 }
+
 .btn-primary {
     color: #fff !important;
     background-color: #54C1AC !important;
     border-color: #54C1AC !important;
 }
+
 .btn-primary:hover {
     color: black !important;
     background-color: transparent !important;
     border-color: #54C1AC !important;
 }
+
 .thead {
     background-color: #54C1AC !important;
 }
+
 .fa-twitter:hover {
     background-color: transparent !important;
 }
+
 a:hover {
     background-color: transparent !important;
 }
+
 .nav {
     background-color: #AED4E9 !important
 }
+
 #contact_country {
     background-color: white;
 }
