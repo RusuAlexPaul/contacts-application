@@ -48,7 +48,7 @@
               <div class= "col">
                 <div class="form-group">
                   <label for="form">Country:</label>
-                    <%= form.country_select :country, :class => 'form-control bg-light text-dark border border-dark' %>
+                    <%= form.country_select :country, {include_blank: "Select a country"}, { :class => 'form-control bg-light text-dark border border-dark', :type => "text", :id => "exampleFormControlSelect1"} %>
                 </div>
               </div>
             </div>
@@ -66,7 +66,7 @@
               <div class= "col">
                 <div class="form-group">
                   <label for="form">Gender</label>
-                  <%= form.text_field :gender, :class => 'form-control bg-light text-dark border border-dark', :type => "text", :placeholder => "Gender" %>
+                  <%= form.select(:gender, ['Male', 'Female'], {include_blank: "Select a gender"}, { :class => 'form-control bg-light text-dark border border-dark', :type => "text", :placeholder => "Gender", :id => "exampleFormControlSelect1"})%>
                 </div>
               </div>
             </div> 
