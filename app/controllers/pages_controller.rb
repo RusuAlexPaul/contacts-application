@@ -1,5 +1,13 @@
-class PagesController < ActionController::Base
-  def show 
-    render params[:home]
+class PagesController < ApplicationController
+  
+  def home 
+    
   end
+
+  def about
+  end
+  
+  def contact
+  end
+
 end

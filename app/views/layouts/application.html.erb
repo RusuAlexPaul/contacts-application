@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html class="bg-dark">
   <head>
+    <ul class="nav">
+      <li class="nav-item"><%= link_to 'Home', root_path, :class => 'nav-link' %></li>
+      <li class="nav-item"><%= link_to 'About', pages_about_path, :class => 'nav-link' %></li>
+      <li class="nav-item"><%= link_to 'Contact', pages_contact_path, :class => 'nav-link' %></li>
+    </ul>
     <title>Contacts</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
