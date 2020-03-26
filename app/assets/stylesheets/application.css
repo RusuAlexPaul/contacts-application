@@ -65,6 +65,11 @@ a:hover {
 #contact_country {
     background-color: white;
 }
+
 #notice {
     background-color: #AED4E9 !important;
+}
+
+.logo {
+    height: 40px;
 }

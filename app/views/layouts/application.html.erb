@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html class="bg-dark">
   <head>
-    <ul class="nav">
-      <li class="nav-item"><%= link_to 'Home', root_path, :class => 'nav-link' %></li>
-      <li class="nav-item"><%= link_to 'About', pages_about_path, :class => 'nav-link' %></li>
-      <li class="nav-item"><%= link_to 'Contact', pages_contact_path, :class => 'nav-link' %></li>
-    </ul>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">
+            <%= image_tag("logo-contacts.png", :alt => "rss feed", :class => 'logo') %>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav5" aria-controls="navbarNav5" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav5">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active"><%= link_to 'Home', root_path, :class => 'nav-link'%></li>
+              <li class="nav-item"> <%= link_to 'About', pages_about_path, :class => 'nav-link' %></li>
+              <li class="nav-item"> <%= link_to 'Contact', pages_contact_path, :class => 'nav-link' %></li>
+            </ul>
+
+            <ul class="navbar-nav justify-content-end ml-auto">
+              <li class="nav-item"> <%= link_to 'Log In', pages_contact_path, :class => 'nav-link' %></li>
+            </ul>
+
+            <a class="btn btn-primary ml-md-3" href="#">Register</a>
+          </div>
+        </nav>
+      </div>
+    </header>
     <title>Contacts</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
