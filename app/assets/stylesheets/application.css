@@ -42,8 +42,8 @@ img {
 
 .btn-primary:hover {
     color: black !important;
-    background-color: transparent !important;
-    border-color: #54C1AC !important;
+    background-color: white !important;
+    border-color: white !important;
 }
 
 .thead {
@@ -72,4 +72,8 @@ a:hover {
 
 .logo {
     height: 40px;
+}
+
+header {
+    background-color: #AED4E9 !important;
 }
