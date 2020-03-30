@@ -77,3 +77,11 @@ a:hover {
 header {
     background-color: #AED4E9 !important;
 }
+
+.fdb-block .fdb-box-contact {
+    background: #AED4E9 !important;
+
+    overflow: hidden;
+    color: #444;
+    border-radius: .25rem;
+}
