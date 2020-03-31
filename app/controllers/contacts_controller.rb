@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
   # GET /contacts/1
   # GET /contacts/1.json
   def show
-    @contact.age = Date.today.year - @contact.birthdate.year
+
   end
 
   # GET /contacts/new
@@ -28,11 +28,12 @@ class ContactsController < ApplicationController
   # POST /contacts.json
   def create
     @contact = Contact.new(contact_params)
-
+    @contact.age = Date.today.year - @contact.birthdate.year
     respond_to do |format|
       if @contact.save
         format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
         format.json { render :show, status: :created, location: @contact }
+        
       else
         format.html { render :new }
         format.json { render json: @contact.errors, status: :unprocessable_entity }

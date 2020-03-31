@@ -61,7 +61,7 @@
           <div class="row border border-dark bg-light border-top-0 rounded-bottom">
             <div class="col pb-4 mt-4">
               <strong>Age: </strong>
-              <%= @contact.age %>
+              <%= @contact.age = Date.today.year - @contact.birthdate.year %>
             </div>
           </div>
 
