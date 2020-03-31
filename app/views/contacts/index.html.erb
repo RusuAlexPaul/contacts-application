@@ -11,14 +11,14 @@
         </div>
       </div>
       <div class="col-sm pt-4 rounded float-right">
-       <%= image_tag("online-contacts.svg", :alt => "rss feed") %>
+       <%= image_tag("online-contacts.svg", :alt => "rss feed", :class => 'image-home') %>
       </div>
     </div>
   </div>
 </section>
 
 
-<section class="fdb-block p-5">
+<section class="fdb-block p-3">
   <div class="container">
     <div class="table-responsive">
       <table class="table shadow table-borderless table-hover">
@@ -54,6 +54,16 @@
           <% end %>
         </tbody>
       </table>
+    </div>
+    <div id="mycontent" class="d-lg-none">  
+      <div class="row justify-content-center">
+        <p class="text-dark font-weight-bolder">swipe to see more</p>
+        <p class="ml-2 text-dark">
+          <i class="fas fa-arrow-circle-left"></i>
+          <i class="fas fa-hand-pointer"></i>
+          <i class="fas fa-arrow-circle-right"></i>
+        </p>
+      </div>
     </div>
   </div>
 </section>
