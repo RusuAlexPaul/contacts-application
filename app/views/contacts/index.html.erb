@@ -46,7 +46,7 @@
               <td><%= contact.country %></td>
               <td><%= contact.city %></td>
               <td><%= contact.gender %></td>
-              <td><%= Date.today.year - contact.birthdate.year %></td>
+              <td><%= contact.age %></td>
               <td><%= link_to 'Show', contact, :class => 'btn-link text-decoration-none font-weight-bold' %></td>
               <td><%= link_to 'Edit', edit_contact_path(contact), :class => 'btn-link text-decoration-none font-weight-bold' %></td>
               <td><%= link_to 'Destroy', contact, :class => 'btn-link text-decoration-none text-danger font-weight-bold', method: :delete, data: { confirm: 'Are you sure?' } %></td>
