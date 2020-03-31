@@ -10,6 +10,7 @@ class ContactsController < ApplicationController
   # GET /contacts/1
   # GET /contacts/1.json
   def show
+    @contact.age = Date.today.year - @contact.birthdate.year
   end
 
   # GET /contacts/new
@@ -20,6 +21,8 @@ class ContactsController < ApplicationController
   # GET /contacts/1/edit
   def edit
   end
+
+ 
 
   # POST /contacts
   # POST /contacts.json
@@ -69,7 +72,7 @@ class ContactsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def contact_params
-      params.require(:contact).permit(:name, :email, :phone, :country, :city, :gender, :age)
+      params.require(:contact).permit(:name, :email, :phone, :country, :city, :gender, :age, :birthdate)
     end
 
 end

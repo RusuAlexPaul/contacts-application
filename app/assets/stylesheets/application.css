@@ -46,6 +46,10 @@ img {
     border-color: white !important;
 }
 
+.lead {
+  font-size: 1.2rem !important;
+}
+
 .thead {
     background-color: #54C1AC !important;
 }
