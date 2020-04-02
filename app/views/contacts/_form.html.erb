@@ -74,12 +74,9 @@
               <div class="row mt-4 field">
                 <div class= "col">
                   <div class="form-group">
-                    <label for="form">Age</label>
-                      <div class="form-row">
-                        <div class="col">
-                          <%= form.date_select(:birthdate, {class: 'form-control bg-light' ,:type => 'text' })%>
-                        </div>
-                      </div>
+                    <label for="form row">Birthdate</label>
+                    <br>
+                      <%= form.date_select(:birthdate, { :class => "form-control col bg-light text-dark border border-dark", order: [:day, :month, :year], prompt: { day: 'Select day', month: 'Select month', year: 'Select year' }, start_year: Date.today.year - 18, end_year: Date.today.year - 100}, {required: true})%>
                   </div>
                 </div>
               </div>
