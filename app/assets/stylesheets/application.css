@@ -58,9 +58,6 @@ img {
     background-color: transparent !important;
 }
 
-a:hover {
-    background-color: transparent !important;
-}
 
 .nav {
     background-color: #AED4E9 !important
@@ -120,3 +117,11 @@ header {
     height: 250px;
   }
  }
+ a:hover {
+   background-color: transparent !important;
+ }
+
+ul li.active a{
+  background-color: #54C1AC !important;
+  color:white !important;
+}

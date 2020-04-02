@@ -15,7 +15,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-7 col-md-5 text-center">
-          <div class="fdb-box fdb-touch">
+          <div class="fdb-box fdb-touch pb-5">
             
             <div class="row mt-4 field">
               <div class= "col">
@@ -75,7 +75,11 @@
                 <div class= "col">
                   <div class="form-group">
                     <label for="form">Age</label>
-                    <%= form.date_select :birthdate, :class => 'form-control bg-light text-dark border border-dark', :type => 'text', :placeholder => 'Your Age' %>
+                      <div class="form-row">
+                        <div class="col">
+                          <%= form.date_select(:birthdate, {class: 'form-control bg-light' ,:type => 'text' })%>
+                        </div>
+                      </div>
                   </div>
                 </div>
               </div>
@@ -95,5 +99,15 @@
       </div>
     </div>
   </section>
+
+<section class="fdb-block bg-dark text-light">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12">
+        <h3>Made with <i class="fas fa-heart text-danger"></i> by <a class="alex-rusu" href="https://alex.dutylabs.ro"> Alex Rusu</a></h1>
+      </div>
+    </div>
+  </div>
+</section>
 
 <% end %>
