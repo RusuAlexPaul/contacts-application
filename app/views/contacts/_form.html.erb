@@ -16,21 +16,24 @@
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-7 col-md-5 text-center">
           <div class="fdb-box fdb-touch pb-5">
-            
             <div class="row mt-4 field">
               <div class= "col">
                 <div class="form-group">
-                  <label for="form">Name: </label>
-                  <%= form.text_field :name, :class => "form-control bg-light text-dark border border-dark", :type => "text", :placeholder => "Your Name" %>
+                  <label for="form validationCustom01">Name: </label>
+                  <%= form.text_field :name, :class => "form-control needs-validation bg-light text-dark border border-dark", :type => "text", id: 'validationCustom01' ,:placeholder => "Your Name", required: true, novalidate: true %>
+                  <div class="invalid-feedback">
+                    Please write your name!
+                  </div>
                 </div>
               </div>
             </div>
 
+
             <div class="row mt-4 field">
               <div class= "col">
                 <div class="form-group">
-                  <label for="form">Email: </label>
-                  <%= form.text_field :email, :class => "form-control bg-light text-dark border border-dark", :type => "text", :placeholder => "Your Email" %>
+                  <label for="inputEmail13">Email: </label>
+                  <%= form.text_field :email, :class => "form-control bg-light text-dark border border-dark", id: 'inputEmail13', :type => "email", :placeholder => "Your Email", required: true %>
                 </div>
               </div>
             </div>
@@ -39,7 +42,7 @@
               <div class= "col">
                 <div class="form-group">
                   <label for="form">Phone: </label>
-                  <%= form.text_field :phone, :class => "form-control bg-light text-dark border border-dark", :type => "text", :placeholder => "Phone Number" %>
+                  <%= form.text_field :phone, :class => "form-control bg-light text-dark border border-dark", :type => "text", :placeholder => "Phone Number", required: true %>
                 </div>
               </div>
             </div>
@@ -47,8 +50,8 @@
             <div class="row mt-4 field">
               <div class= "col">
                 <div class="form-group">
-                  <label for="form">Country:</label>
-                    <%= form.country_select :country, {include_blank: "Select a country"}, { :class => 'form-control bg-light text-dark border border-dark', :type => "text", :id => "exampleFormControlSelect1"} %>
+                  <label for="form validationServer03">Country:</label>
+                    <%= form.country_select :country, {include_blank: "Select a country"}, { :class => 'form-control bg-light text-dark border border-dark', :type => "text", :id => "exampleFormControlSelect1 validationServer03", required: true} %>
                 </div>
               </div>
             </div>
@@ -56,8 +59,11 @@
             <div class="row mt-4 field">
               <div class= "col">
                 <div class="form-group">
-                  <label for="form">City</label>
-                  <%= form.text_field :city, :class => 'form-control bg-light text-dark border border-dark', :type => "text", :placeholder => "City" %>
+                  <label for="form validationServer03">City</label>
+                  <%= form.text_field :city, :class => 'form-control needs-validation bg-light text-dark border border-dark', :type => "text", :placeholder => "City", id: 'validationServer03', required: true, novalidate: true %>
+                  <div class="invalid-feedback">
+                    Please provide a city.
+                  </div>
                 </div>
               </div>
             </div>
@@ -66,7 +72,7 @@
               <div class= "col">
                 <div class="form-group">
                   <label for="form">Gender</label>
-                  <%= form.select(:gender, ['Male', 'Female'], {:include_blank => 'Select a gender'}, { :class => 'form-control bg-light text-dark border border-dark', :type => "text", :id => "exampleFormControlSelect1"})%>
+                  <%= form.select(:gender, ['Male', 'Female'], {:include_blank => 'Select a gender'}, { :class => 'form-control bg-light text-dark border border-dark', :type => "text", :id => "exampleFormControlSelect1", required: true})%>
                 </div>
               </div>
             </div> 
